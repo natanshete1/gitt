@@ -1,5 +1,5 @@
 # gitt
 
-**Run**`
+**Run**
 
-`ython3 main.py`
+`python3 main.py`
