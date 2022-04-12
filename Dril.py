@@ -14,16 +14,18 @@ class powerball:
     def white_balls(self):
         for x in range(5):
             number = random.randint(1, 20)
-            if number not in self.strong_number:
-                self.strong_number.append(number)
+            if number in self.strong_number:
+                number = random.randint(1, 20)
+            self.strong_number.append(number)
         print(self.strong_number)
 
     def strong_ball(self):
         print("your lucky numbers:")
         for x in range(5):
             number = random.randint(1, 10)
-            if number not in self.guessed_numbers:
-                self.guessed_numbers.append(number)
+            if number in self.guessed_numbers:
+                number = random.randint(1, 20)
+            self.guessed_numbers.append(number)
         print(self.guessed_numbers)
         print("try again")
 
